@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noMessageFr">
+
+    <fragment
+        android:id="@+id/noMessageFr"
+        android:name="com.example.warningscreensfragmentstudy.NoMessageFr"
+        android:label="fragment_no_message"
+        tools:layout="@layout/fragment_no_message" >
+        <action
+            android:id="@+id/action_noMessageFr_to_noFavouritesFr"
+            app:destination="@id/noFavouritesFr" />
+    </fragment>
+        <action
+            android:id="@+id/action_noMessageFr_to_noFavouritesFr2"
+            app:destination="@id/noFavouritesFr" />
+
+    <fragment
+        android:id="@+id/noFavouritesFr"
+        android:name="com.example.warningscreensfragmentstudy.NoFavouritesFr"
+        android:label="fragment_no_favourites"
+        tools:layout="@layout/fragment_no_favourites" >
+        <action
+            android:id="@+id/action_noFavouritesFr_to_no_notification2"
+            app:destination="@id/no_notification2" />
+    </fragment>
+    <fragment
+        android:id="@+id/no_notification2"
+        android:name="com.example.warningscreensfragmentstudy.NoNotification"
+        android:label="fragment_no_notification"
+        tools:layout="@layout/fragment_no_notification" />
+</navigation>
